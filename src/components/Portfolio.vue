@@ -71,7 +71,7 @@
                 Passionate about building scalable web systems & intuitive UI components.
               </h1>
               <p class="text-body-2  mb-6" style="line-height: 1.6;">
-                I am a junior CS student dedicated to full-stack web development, software engineering fundamentals,
+                I am a junior CE student dedicated to full-stack web development, software engineering fundamentals,
                 and algorithmic optimization. Experienced with modern JavaScript/TypeScript, Python, Vue/Vuetify,
                 React, and Cloud Infrastructure. Eager to contribute fresh perspectives, strong problem-solving skills, and
                 a relentless work ethic to a dynamic engineering team!
