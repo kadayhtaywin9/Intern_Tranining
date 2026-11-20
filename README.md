@@ -1,38 +1,24 @@
-# intern_training
+# Intern Training — Full-Stack Vue 3 + Express + MySQL
 
-This template should help get you started developing with Vue 3 in Vite.
+Complete full-stack project with **Login**, **Signup**, **Dashboard**, **User Management**, and **Role Management** connected to a **MySQL** database.
 
-## Recommended IDE Setup
+## 1. MySQL Setup
+1. Start your MySQL server (XAMPP, Laragon, WAMP, or MySQL Windows/Linux service).
+2. Check `backend/.env` and update `DB_USER` / `DB_PASSWORD` if needed (default: `root` with empty password).
+3. The backend automatically creates `intern_training_db`, tables (`users`, `roles`), and a default admin account (`admin` / `admin123`) on startup—or you can manually run `backend/database.sql`.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+## 2. Run the Backend (Express + MySQL)
+```bash
+cd backend
 npm install
+npm start
 ```
+Backend runs at `http://localhost:5000`.
 
-### Compile and Hot-Reload for Development
-
-```sh
+## 3. Run the Frontend (Vue 3 + Vuetify)
+Open a second terminal in the project root (`Intern_Tranining/`):
+```bash
+npm install
 npm run dev
 ```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Open `http://localhost:5173` in your browser.

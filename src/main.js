@@ -3,15 +3,14 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
-import User from './components/User.vue'
+//import User from './components/UserTest.vue/index.js'
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
-import '@mdi/font/css/materialdesignicons.css'
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
-
+import '@mdi/font/css/materialdesignicons.css'
 const app = createApp(App)
 
 const vuetify = createVuetify({
@@ -19,10 +18,10 @@ const vuetify = createVuetify({
     directives,
     icons: {
     defaultSet: 'mdi',
-    aliases,
-    sets: {
-      mdi,
-    },
+    // aliases,
+    // sets: {
+    //   mdi,
+    // },
   },
 })
 
@@ -31,5 +30,6 @@ app.use(router)
 app.use(vuetify)
 
 //component registration
-app.component('user', User)
+//app.component('user', User)
+
 app.mount('#app')
