@@ -8,12 +8,6 @@
     </v-app-bar-title>
 
     <v-spacer></v-spacer>
-
-    <!-- <div v-if="auth.user" class="d-flex align-center mr-4 ga-2">
-      <v-chip color="primary" variant="tonal" size="small" prepend-icon="mdi-account-circle">
-        {{ auth.user.name }} ({{ auth.user.role_name || 'Member' }})
-      </v-chip>
-    </div> -->
   </v-app-bar>
 </template>
 
